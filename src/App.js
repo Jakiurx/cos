@@ -8,7 +8,7 @@ import Error from './pages/Error';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Outlet />}>
           <Route path="" element={<Main />}/>
@@ -18,7 +18,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
