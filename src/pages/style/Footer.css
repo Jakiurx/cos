@@ -1,0 +1,31 @@
+footer{
+    background-color: var(--accent-color);
+    margin-top: 0px;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 1em;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.waveFooter{
+    position: relative;
+    top: 5px;
+    width: 100vw;
+    height: 200px;
+}
+.githubLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    transition: opacity 300ms;
+}
+.githubLink:hover{
+    opacity: 0.5;
+}
+.github{
+    width: 50px;
+    margin-right: .5em;
+}

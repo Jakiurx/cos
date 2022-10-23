@@ -1,0 +1,35 @@
+main{
+    width: 100vw;
+}
+main>div.gradientText{
+    max-width: fit-content;
+    font-size: 10em;
+    padding-left: 5%;
+    font-weight: 600;
+    background: linear-gradient(90deg, #444444, white);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.rightMain{
+    position: relative;
+    top: -70px;
+    width: 10em;
+    margin-right: 3em;
+    float: right;
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.bigTextMain{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--accent-color);
+    text-shadow: 1px 1px 2px black;
+}
+@media all and (max-width:800px){
+    .rightMain{
+        position: relative;
+        top: 0px;
+    }
+}

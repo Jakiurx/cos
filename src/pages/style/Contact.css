@@ -1,0 +1,51 @@
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5vh;
+    z-index: 100;
+}
+form>p{
+    font-size: 40px;
+    margin: 0px;
+    color: #999;
+}
+.inputImie, .inputEmail, .inputTresc{
+    background-color: var(--bodyColor);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    width: 70vw;
+    max-width: 500px;
+    height: 1.5em;
+    border: 2px solid #999;
+    border-radius: 20px;
+    transition: background-color 300ms;
+}
+.inputTresc{
+    height: 15em;
+    resize: none;
+}
+.inputImie:is(:hover,:focus), .inputEmail:is(:hover,:focus), .inputTresc:is(:hover,:focus){
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.submit{
+    background-color: var(--accent-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    width: 15em;
+    height: 3em;
+    border: 2px solid #999;
+    color: rgb(87, 87, 87);
+    border-radius: 20px;
+    transition: background-color 100ms;
+}
+.submit:is(:hover, :focus){
+    color: black;
+    scale: 1.1;
+    background-color: var(--accent-color-a20);;
+}
+

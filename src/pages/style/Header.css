@@ -1,0 +1,55 @@
+body{
+    --accent-color:#ffac1d;
+    --accent-color-a20:rgba(255, 172, 29, 20%);
+    --accent-color-darker:rgb(155, 103, 12);
+    overflow-x: hidden;
+}
+header{
+    background-color: #444444;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1em;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+.waveHeader{
+    position: relative;
+    top: -1px;
+    width: 100%;
+    height: 200px;
+}
+.logo{
+    width: 50px;
+    margin-right: auto;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1em;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+.link{
+    color: rgb(255, 172, 29);
+    text-shadow: 2px 2px 2px black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: scale 300ms;
+    flex: flex-end;
+}
+.link:is(:hover,:focus){
+    scale: 1.1;
+}
+@media all and (min-width:500px){
+    header{
+        flex-direction: row;
+    }
+    .menu{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
